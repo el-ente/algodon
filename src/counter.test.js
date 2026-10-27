@@ -11,4 +11,11 @@ describe('createCounter', () => {
     expect(counter.increment()).toBe(1);
     expect(counter.increment()).toBe(2);
   });
+
+  it('resets to the start value', () => {
+    const counter = createCounter();
+    counter.increment();
+    expect(counter.reset()).toBe(0);
+    expect(counter.value).toBe(0);
+  });
 });
