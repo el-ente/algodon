@@ -11,6 +11,11 @@
       <h1>Algodon</h1>
       <p class="tagline">Example app for testing the Claude issue-to-PR workflow.</p>
       <button id="counter" type="button">Count is 0</button>
+      <section class="picker">
+        <input id="fruit-input" type="text" placeholder="Search fruits…" autocomplete="off" aria-label="Search fruits" />
+        <ul id="fruit-list" class="fruit-list" hidden></ul>
+        <p id="fruit-selected"></p>
+      </section>
     </main>
     <footer>Algodon example</footer>
     <script type="module" src="/src/main.js"></script>
