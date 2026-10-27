@@ -27,3 +27,50 @@ footer {
   color: #656d76;
   font-size: 0.9rem;
 }
+.picker {
+  margin-top: 2rem;
+  position: relative;
+  width: 260px;
+  margin-inline: auto;
+}
+.picker input {
+  font: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em 0.75em;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+}
+.fruit-list {
+  position: absolute;
+  top: 2.6em;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.25rem 0;
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.fruit-list[hidden] {
+  display: none;
+}
+.fruit-list li {
+  padding: 0.4em 0.75em;
+  cursor: pointer;
+}
+.fruit-list li:hover {
+  background: #eaeef2;
+}
+.fruit-list li.empty {
+  color: #656d76;
+  cursor: default;
+}
+.fruit-list li.empty:hover {
+  background: none;
+}
